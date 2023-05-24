@@ -28,7 +28,7 @@ def main():
             if int(continue_response) == 2:
                 pass
         
-        if int(response) == 2:
+        elif int(response) == 2:
             PieChart.main()
             
             MoneyLogging.slowtype("Is that all you would like to do today?\n1-Yes\n2-No\n")
@@ -40,7 +40,7 @@ def main():
             if int(continue_response) == 2:
                 pass
         
-        if int(response) == 3:
+        elif int(response) == 3:
             Expected_Transactions.main()
             
             MoneyLogging.slowtype("Is that all you would like to do today?\n1-Yes\n2-No\n")
@@ -51,8 +51,5 @@ def main():
                 break
             if int(continue_response) == 2:
                 pass
-        
-        else:
-            MoneyLogging.slowtype("Sorry, wrong format \n")
         
 main()
